@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { destinations } from '../../data/travelData';
 import DestinationCard from '../ui/DestinationCard';
 
@@ -19,9 +20,17 @@ export default function Destinations() {
               Explore the World's Most Popular Places
             </h2>
           </div>
-          <p className="text-text-secondary text-base md:text-lg max-w-md leading-relaxed">
-            Handpicked luxury getaways. Immersive culture, spectacular wilderness, and breathtaking oceanside views crafted for memories of a lifetime.
-          </p>
+          <div className="flex flex-col items-start md:items-end gap-4 shrink-0">
+            <p className="text-text-secondary text-base md:text-lg max-w-md leading-relaxed md:text-right">
+              Handpicked luxury getaways. Immersive culture, spectacular wilderness, and breathtaking oceanside views.
+            </p>
+            <Link
+              to="/destinations"
+              className="text-primary hover:text-primary-dark font-poppins font-bold text-sm tracking-wider uppercase flex items-center gap-2 transition-colors duration-300"
+            >
+              View All Destinations &rarr;
+            </Link>
+          </div>
         </div>
 
         {/* Swiper Slider Wrapper */}
@@ -59,7 +68,7 @@ export default function Destinations() {
             }}
             className="pb-16"
           >
-            {destinations.map((dest) => (
+            {destinations.slice(0, 8).map((dest) => (
               <SwiperSlide key={dest.id} className="h-auto">
                 <DestinationCard destination={dest} />
               </SwiperSlide>
