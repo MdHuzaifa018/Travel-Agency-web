@@ -76,7 +76,7 @@ export default function TravelExperience() {
             {/* Primary Curved Image */}
             <div className="w-[85%] aspect-[3/4] rounded-[60px] overflow-hidden shadow-2xl border border-white relative">
               <img
-                src="https://images.unsplash.com/photo-1522885140904-7b92b93f4b71?auto=format&fit=crop&w=800&q=80"
+                src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?auto=format&fit=crop&w=800&q=80"
                 alt="Luxury Dining Experience"
                 className="w-full h-full object-cover"
               />
