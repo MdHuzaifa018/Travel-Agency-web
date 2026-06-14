@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { RiCompassDiscoverFill, RiFacebookFill, RiTwitterFill, RiInstagramFill, RiYoutubeFill, RiLinkedinFill, RiGithubFill } from 'react-icons/ri';
+import { RiCompassDiscoverFill, RiFacebookFill, RiTwitterFill, RiInstagramFill, RiYoutubeFill, RiLinkedinFill, RiGithubFill, RiWhatsappFill } from 'react-icons/ri';
 import { MdEmail, MdPhone, MdLocationOn } from 'react-icons/md';
 
 export default function Footer() {
@@ -146,7 +146,7 @@ export default function Footer() {
           <p className="hover:text-text-secondary text-primary transition-colors duration-200">
             Designed & Developed by{' '}
             <a 
-              href="https://www.linkedin.com/in/huzaif-sheikh-6443a6330" 
+              href="https://api.whatsapp.com/send?phone=918434890116" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-text-secondary hover:text-primary font-semibold transition-all duration-200"
@@ -155,6 +155,16 @@ export default function Footer() {
             </a>
           </p>
           <div className="flex items-center gap-4">
+            <a 
+              href="https://api.whatsapp.com/send?phone=918434890116" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="hover:text-primary text-text-secondary/70 transition-all duration-200"
+              aria-label="WhatsApp Chat"
+              title="WhatsApp Chat"
+            >
+              <RiWhatsappFill size={18} />
+            </a>
             <a 
               href="https://github.com/MdHuzaifa018" 
               target="_blank" 
