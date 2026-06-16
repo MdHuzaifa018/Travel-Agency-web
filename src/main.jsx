@@ -9,6 +9,8 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <HelmetProvider>       {/* ← NEW */}
+      <App />
+    </HelmetProvider>      {/* ← NEW */}
   </StrictMode>,
 )

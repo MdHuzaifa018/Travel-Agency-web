@@ -10,9 +10,11 @@ import Testimonials from '../components/sections/Testimonials';
 import Blog from '../components/sections/Blog';
 import Newsletter from '../components/sections/Newsletter';
 import Contact from '../components/sections/Contact';
+import { Helmet } from 'react-helmet-async';
 
 export default function Home() {
   return (
+    
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -20,6 +22,12 @@ export default function Home() {
       transition={{ duration: 0.5 }}
       className="w-full"
     >
+
+      <Helmet>
+        <title>TOUREST | Premium Tour & Travel Agency | Luxury Getaways</title>
+        <meta name="description" content="Book handcrafted luxury travel itineraries, private resort stays, and VIP travel planning with TOUREST." />
+        <link rel="canonical" href="https://toor-travel-agency-web.vercel.app/" />
+      </Helmet>
       <Hero />
       <Destinations />
       <About />

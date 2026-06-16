@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { packages } from '../data/travelData';
 import TourCard from '../components/ui/TourCard';
 import { BiSearch } from 'react-icons/bi';
+import { Helmet } from 'react-helmet-async';
 
 export default function Packages() {
   const [searchParams] = useSearchParams();
@@ -48,6 +49,11 @@ export default function Packages() {
       transition={{ duration: 0.5 }}
       className="w-full pt-[72px]"
     >
+      <Helmet>
+        <title>Tour Packages | TOUREST - Luxury Travel Deals</title>
+        <meta name="description" content="Browse our exclusive collection of premium tour packages for every traveler." />
+        <link rel="canonical" href="https://toor-travel-agency-web.vercel.app/packages" />
+      </Helmet>
       {/* Header Banner */}
       <div className="relative py-24 md:py-32 bg-section-bg border-b border-border overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-15">

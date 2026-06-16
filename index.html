@@ -5,11 +5,44 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- SEO Meta Tags -->
+    <meta name="google-site-verification" content="BZoSqBrl8bhlRXZ7bE1wWywg3KZGPpyn32xMcG41CnQ" />
+
+    <!-- ✅ Primary SEO Meta Tags -->
     <title>TOUREST | Premium Tour & Travel Agency | Curated Luxury Getaways</title>
-    <meta name="description" content="Discover handcrafted luxury travel itineraries, private resort bookings, and five-star VIP travel planning with TOUREST, the world's leading premium travel agency." />
+    <meta name="description" content="Discover handcrafted luxury travel itineraries, private resort bookings, and five-star VIP travel planning with TOUREST." />
     <meta name="keywords" content="luxury travel agency, bespoke tour packages, vacation planning, luxury resorts, five star travel concierge" />
     <meta name="author" content="TOUREST Concierge" />
+
+
+    <Helmet>
+      <title>Explore Destinations | TOUREST</title>
+      <meta name="description" content="Discover breathtaking destinations..." />
+      <meta property="og:title" content="Explore Destinations | TOUREST" />
+      <meta property="og:description" content="Discover breathtaking destinations..." />
+      <meta property="og:url" content="https://toor-travel-agency-web.vercel.app/destinations" />
+      <meta property="og:image" content="https://toor-travel-agency-web.vercel.app/og-image.jpg" />
+    </Helmet>
+
+    
+    <!-- ✅ NEW: Robots tag -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- ✅ NEW: Canonical URL (apna Vercel URL dalo) -->
+    <link rel="canonical" href="https://tumhara-domain.vercel.app/" />
+
+    <!-- ✅ NEW: Open Graph Tags (Facebook, WhatsApp, LinkedIn preview) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="TOUREST | Premium Tour & Travel Agency" />
+    <meta property="og:description" content="Discover handcrafted luxury travel itineraries and five-star VIP travel planning." />
+    <meta property="og:url" content="https://tumhara-domain.vercel.app/" />
+    <meta property="og:image" content="https://tumhara-domain.vercel.app/og-image.jpg" />
+    <meta property="og:site_name" content="TOUREST" />
+
+    <!-- ✅ NEW: Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="TOUREST | Premium Tour & Travel Agency" />
+    <meta name="twitter:description" content="Discover handcrafted luxury travel itineraries." />
+    <meta name="twitter:image" content="https://tumhara-domain.vercel.app/og-image.jpg" />
 
     <!-- Google Fonts Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,5 +51,34 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <!-- ✅ Structured Data - JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "TOUREST",
+    "description": "Premium tour and travel agency offering luxury getaways and curated travel experiences.",
+    "url": "https://toor-travel-agency-web.vercel.app/",
+    "logo": "https://toor-travel-agency-web.vercel.app/favicon.svg",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-8434890116",
+      "contactType": "customer service",
+      "availableLanguage": ["English", "Hindi"]
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bihar Sharif ",
+      "addressRegion": "Bihar",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://www.facebook.com/your-page",
+      "https://www.instagram.com/your-page",
+      "https://twitter.com/your-handle"
+    ]
+  }
+  </script>
   </body>
 </html>

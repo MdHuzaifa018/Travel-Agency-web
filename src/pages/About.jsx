@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { FiTarget, FiEye, FiCompass, FiShield, FiHeart } from 'react-icons/fi';
 import { RiTwitterFill, RiLinkedinFill, RiInstagramFill } from 'react-icons/ri';
+import { Helmet } from 'react-helmet-async';
 
 const teamMembers = [
   {
@@ -38,6 +39,13 @@ export default function About() {
       transition={{ duration: 0.5 }}
       className="w-full pt-[72px] font-inter"
     >
+      <Helmet>
+        <title>About Us | TOUREST - Our Story & Mission</title>
+        <meta name="description" content="Learn about TOUREST's mission to deliver unforgettable luxury travel experiences." />
+        <link rel="canonical" href="https://toor-travel-agency-web.vercel.app/about" />
+      </Helmet>
+      
+
       {/* Header Banner */}
       <div className="relative py-24 md:py-32 bg-section-bg border-b border-border overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-15">

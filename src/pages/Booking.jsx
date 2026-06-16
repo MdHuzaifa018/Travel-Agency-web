@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { packages } from '../data/travelData';
 import { FiCheckCircle, FiInfo, FiCalendar, FiUsers, FiTag } from 'react-icons/fi';
 import { RiCompassDiscoverFill } from 'react-icons/ri';
-
+import { Helmet } from 'react-helmet-async';
 export default function Booking() {
   const [searchParams] = useSearchParams();
   const initialPackage = searchParams.get('package') || '';
@@ -88,6 +88,12 @@ export default function Booking() {
       transition={{ duration: 0.5 }}
       className="w-full pt-[72px] font-inter bg-section-bg min-h-screen"
     >
+      <Helmet>
+        <title>Booking | TOUREST - Luxury Travel Deals</title>
+        <meta name="description" content="Book your dream luxury vacation with TOUREST's easy booking system." />
+        <link rel="canonical" href="https://toor-travel-agency-web.vercel.app/booking" />
+      </Helmet>
+
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-24">
         
         <AnimatePresence mode="wait">

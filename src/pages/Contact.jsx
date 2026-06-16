@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import ContactSection from '../components/sections/Contact';
+import { Helmet } from 'react-helmet-async';
 
 export default function Contact() {
   return (
@@ -10,6 +11,13 @@ export default function Contact() {
       transition={{ duration: 0.5 }}
       className="w-full pt-[72px]"
     >
+
+      <Helmet>
+        <title>Contact Us | TOUREST - Get in Touch with Our Travel Experts</title>
+        <meta name="description" content="Reach out to TOUREST for bookings, inquiries, and personalized travel planning." />
+        <link rel="canonical" href="https://toor-travel-agency-web.vercel.app/contact" />
+      </Helmet>
+
       {/* Page Header */}
       <div className="relative py-24 md:py-32 bg-section-bg border-b border-border overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-15">

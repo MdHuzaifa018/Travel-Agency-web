@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { destinations } from '../data/travelData';
 import DestinationCard from '../components/ui/DestinationCard';
 import { BiSearch } from 'react-icons/bi';
+import { Helmet } from 'react-helmet-async';
 
 export default function Destinations() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -32,6 +33,12 @@ export default function Destinations() {
       transition={{ duration: 0.5 }}
       className="w-full pt-[72px]"
     >
+
+      <Helmet>
+        <title>Tour Packages | TOUREST - Luxury Travel Deals</title>
+        <meta name="description" content="Discover the world's most breathtaking destinations with curated luxury packages." />
+        <link rel="canonical" href="https://toor-travel-agency-web.vercel.app/destinations" />
+      </Helmet>
       {/* Page Header */}
       <div className="relative py-24 md:py-32 bg-section-bg border-b border-border overflow-hidden">
         <div className="absolute inset-0 z-0 opacity-15">
